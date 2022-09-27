@@ -5,6 +5,9 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  env: {
+    VW_KEY: process.env.VWORLD_KEY
+  }
 }
 
 module.exports = nextConfig
