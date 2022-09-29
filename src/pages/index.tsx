@@ -1,11 +1,11 @@
-import dynamic from "next/dynamic";
-import Head from "next/head";
+import dynamic from 'next/dynamic';
+import Head from 'next/head';
 
-import { Container, Main } from "components/sharedstyles";
+import { Container, Main } from 'components/sharedstyles';
 
-const Cmmap = dynamic(() => import("components/cmmap/cmmap"), { ssr: false });
+const Cmmap = dynamic(() => import('components/cmmap/cmmap'), { ssr: false });
 
-export default function Home() {
+const Home = () => {
   return (
     <Container>
       <Head>
@@ -19,4 +19,6 @@ export default function Home() {
       </Main>
     </Container>
   );
-}
+};
+
+export default Home;

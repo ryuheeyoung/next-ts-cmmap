@@ -1,0 +1,27 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint-config-airbnb", "tslint-react-hooks"
+    ],
+    "linterOptions": {
+        "exclude": ["**/pages/_*.tsx"]
+     },
+    "rules": {
+        "eofline": true,
+        "file-name-casing": [true, { ".*": "camel-case"}],
+        "import-name": [false],
+        "indent": [true, "spaces", 2],
+        "no-trailing-whitespace": true,
+        "quotemark": [true, "single", "jsx-double"],
+        "react-hooks-nesting": true,
+        "trailing-comma": true,
+        "variable-name": {
+            "options": [
+                "check-format",
+                "allow-leading-underscore",
+                "allow-pascal-case"
+            ]
+        }
+    },
+    "rulesDirectory": []
+}

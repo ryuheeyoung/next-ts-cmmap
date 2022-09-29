@@ -1,17 +1,17 @@
-import type { AppProps } from "next/app";
-import { ThemeProvider, DefaultTheme } from "styled-components";
-import GlobalStyle from "../components/globalstyles";
-import "ol/ol.css";
-import "ol/dist/ol";
+import type { AppProps } from 'next/app';
+import { ThemeProvider, DefaultTheme } from 'styled-components';
+import GlobalStyle from '../components/globalstyles';
+import 'ol/ol.css';
+import 'ol/dist/ol';
 
 const theme: DefaultTheme = {
   colors: {
-    primary: "#111",
-    secondary: "#0070f3",
+    primary: '#111',
+    secondary: '#0070f3',
   },
 };
 
-export default function App({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -20,4 +20,6 @@ export default function App({ Component, pageProps }: AppProps) {
       </ThemeProvider>
     </>
   );
-}
+};
+
+export default App;
